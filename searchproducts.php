@@ -75,9 +75,9 @@ ini_set('display_errors', 1);
 
 <?php
 if (isset($_POST["searchitem"])) {
+    $q = "Select * from products where product_name like '".$_POST["searchitem"]."%'";
+    //echo("<div>Requête exécutée:".$q."</div>");
 
-$q = "Select * from products where product_name like '".$_POST["searchitem"]."%'";
-echo("<div>Requête exécutée:".$q."</div>");
 if (isset($_GET['debug']))
 {
 	if ($_GET['debug']=="true")
