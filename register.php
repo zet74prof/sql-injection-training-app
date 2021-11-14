@@ -132,7 +132,7 @@ if (isset($_GET['debug']))
 	  
 	  
 	  <div class="footer">
-		<p>Riyaz Walikar | @riyazwalikar | karniv0re@null.co.in</p>
+		<p>BTS SIO Gabriel Fauré | @siofaure | sio@lycee-faure.fr</p>
       </div>
 
 	</div> <!-- /container -->

@@ -77,7 +77,7 @@ ini_set('display_errors', 1);
 if (isset($_POST["searchitem"])) {
 
 $q = "Select * from products where product_name like '".$_POST["searchitem"]."%'";
-
+echo("<div>Requête exécutée:".$q."</div>");
 if (isset($_GET['debug']))
 {
 	if ($_GET['debug']=="true")
@@ -112,7 +112,7 @@ while($row = mysqli_fetch_array($result))
 	  
 	  
 	  <div class="footer">
-		<p>Riyaz Walikar | @riyazwalikar | karniv0re@null.co.in</p>
+		<p>BTS SIO Gabriel Fauré | @siofaure | sio@lycee-faure.fr</p>
       </div>
 
 	</div> <!-- /container -->

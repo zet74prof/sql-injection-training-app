@@ -65,7 +65,7 @@ if (isset($_GET['debug']))
 	{
 		die('Error: ' . mysqli_error($con));
 	}
-	
+
 	$result = mysqli_query($con,$q);
 
 	// if (!$result) {
@@ -83,7 +83,6 @@ if (mysqli_warning_count($con)) {
 
 	echo "<br /><br />";
 	$row = mysqli_fetch_array($result);
-
 	
 	if ($row){
 	//$_SESSION["id"] = $row[0];
@@ -109,7 +108,7 @@ if (mysqli_warning_count($con)) {
       </div>
 
 	  <div class="footer">
-		<p>Riyaz Walikar | @riyazwalikar | karniv0re@null.co.in</p>
+		<p>BTS SIO Gabriel Fauré | @siofaure | sio@lycee-faure.fr</p>
       </div>
 	</div> <!-- /container -->
   

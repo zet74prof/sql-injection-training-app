@@ -1,6 +1,6 @@
 <?php
 $DBUSER = 'root';
-$DBPASS = 'root';
+$DBPASS = '5MichelAnnecy';
 
 system('mysql -u '.$DBUSER.' -p'.$DBPASS.' < sqlitraining.sql');
 echo "DB reset!<br/>";
