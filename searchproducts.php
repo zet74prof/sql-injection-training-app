@@ -55,6 +55,9 @@ ini_set('display_errors', 1);
 <table>	
     
 	<tr>
+    <td style="width:50px " >
+        <b>ID</b>
+    </td>
     <td style="width:200px " >
         <b>Product Name</b>
     </td>
@@ -94,7 +97,7 @@ if (!$result)
 
 while($row = mysqli_fetch_array($result))
   {
-  echo "<tr><td style=\"width:200px\">".$row[1]."</td><td style=\"width:200px\">".$row[2]."</td><td style=\"width:450px\">".$row[3]."</td><td style=\"width:110px\">".$row[4]."</td></tr>";
+  echo "<tr><td style=\"width:50px\">".$row[0]."</td><td style=\"width:200px\">".$row[1]."</td><td style=\"width:200px\">".$row[2]."</td><td style=\"width:450px\">".$row[3]."</td><td style=\"width:110px\">".$row[4]."</td></tr>";
   }
 
 }

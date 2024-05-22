@@ -1,7 +1,7 @@
 <?php
 // Create connection
 $DBUSER = 'root';
-$DBPASS = '5MichelAnnecy';
+$DBPASS = '&6HAUTdanslaFauré';
 
 $con=mysqli_connect("127.0.0.1",$DBUSER,$DBPASS,"sqlitraining");
 
