@@ -1,5 +1,5 @@
 <?php
-$DBUSER = 'root';
+$DBUSER = 'sqlitraining';
 $DBPASS = '&6HAUTdanslaFauré';
 
 system('mysql -u '.$DBUSER.' -p'.$DBPASS.' < sqlitraining.sql');

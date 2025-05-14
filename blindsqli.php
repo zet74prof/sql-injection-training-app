@@ -4,7 +4,7 @@ ob_start();
 session_start();
 include("db_config.php");
 if (!$_SESSION["username"]){
-    header('Location:Login1.php?msg=1');
+    header('Location:login1.php?msg=1');
 }
 ini_set('display_errors', 0);
 ?>
