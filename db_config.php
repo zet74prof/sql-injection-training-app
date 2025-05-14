@@ -1,13 +1,22 @@
 <?php
-// Create connection
+// Database connection parameters
 $DBUSER = 'root';
-$DBPASS = '&6HAUTdanslaFauré';
+$DBPASS = '5MichelAnnecy';
+$DBHOST = '127.0.0.1';
+$DBNAME = 'sqlitraining';
 
-$con=mysqli_connect("127.0.0.1",$DBUSER,$DBPASS,"sqlitraining");
+try {
+    // Create a PDO connection
+    $con = new PDO("mysql:host=$DBHOST;dbname=$DBNAME", $DBUSER, $DBPASS);
 
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "<font style=\"color:#FF0000\">Could not connect:". mysqli_connect_error()."</font\>";
-  }
+    // Set the PDO error mode to exception
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Optional: Set additional attributes if needed
+    // $con->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+    echo "Connected successfully";
+} catch (PDOException $e) {
+    echo "<font style=\"color:#FF0000\">Could not connect: " . $e->getMessage() . "</font>";
+}
 ?>
