@@ -2,7 +2,6 @@
 <?php
 ob_start();
 include("db_config.php");
-ini_set('display_errors', 1);
 ?>
 
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -119,7 +118,7 @@ ini_set('display_errors', 1);
     </div>
 
     <div class="footer">
-        <p><h4><a href="index.php">Home</a><h4></p>
+        <p><h4><a href="index.php">Home</a></h4></p>
     </div>
 
     <div class="footer">

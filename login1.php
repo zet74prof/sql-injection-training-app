@@ -4,7 +4,6 @@ ob_start();
 session_start();
 
 include("db_config.php");
-ini_set('display_errors', 1);
 ?>
 
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
