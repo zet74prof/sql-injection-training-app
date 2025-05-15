@@ -7,6 +7,7 @@ include("db_config.php");
 if (!isset($_SESSION["username"])){
     header('Location:login1.php?msg=1');
 }
+var_dump($_SESSION);
 ini_set('display_errors', 1);
 ?>
 
