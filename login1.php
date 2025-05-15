@@ -63,7 +63,6 @@ ini_set('display_errors', 1);
                     if ($row) {
                         $_SESSION["username"] = $row['username'];
                         $_SESSION["fname"] = $row['fname'];
-                        ob
                         header('Location: searchproducts.php');
                     } else {
                         echo "<font style=\"color:#FF0000\">Invalid password!</font>";
