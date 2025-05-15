@@ -1,9 +1,8 @@
 <!-- Enable debug using ?debug=true" -->
 <?php
 ob_start();
-if (!session_id()){
-    session_start();
-}
+session_start();
+
 include("db_config.php");
 ini_set('display_errors', 1);
 ?>
@@ -77,7 +76,7 @@ ini_set('display_errors', 1);
     </div>
 
     <div class="footer">
-        <p><h4><a href="index.php">Home</a><h4></p>
+        <p><h4><a href="index.php">Home</a></h4></p>
     </div>
 
     <div class="footer">

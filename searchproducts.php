@@ -6,7 +6,7 @@ session_start();
 include("db_config.php");
 if (!isset($_SESSION["username"])){
     header('Location:login1.php?msg=1');
-} else {
+}
 ini_set('display_errors', 1);
 ?>
 
@@ -112,7 +112,5 @@ ini_set('display_errors', 1);
     </div>
 
 </div> <!-- /container -->
-<?php
-} ?>
 </body>
 </html>
